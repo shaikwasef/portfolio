@@ -7,15 +7,29 @@ import Model3 from "./assets/Desktop-Model3.jpeg"
 import ModelX from "./assets/Desktop-ModelX.jpeg"
 import ModelY from "./assets/Desktop-ModelY.jpeg"
 import solarPanels from "./assets/Desktop-SolarPanels.jpeg"
+import Intro from "./components/Intro.js"
+import React,{useRef} from 'react'
 
 function App() {
+  const item1 = useRef(null);
+  const intro = useRef(null);
+
+  const scrollDown = () => {
+    item1.current.scrollIntoView({behavior : 'smooth'});
+  }
+
+  const scrollTop = () => {
+    intro.current.scrollIntoView({behavior : 'smooth'});
+  }
+
   return (
     <div className="App">
-        <Header />
+        <Header onClickScrollTop = {scrollTop} />
         <div className="app_itemsContainer">
-          <Item
-            title = "Lowest cost solar panels in America"
-            desc = "Money-back-guarantee"
+          <div ref = {intro}/>
+          <Intro
+            title = 'Front-end Developer , Coding Enthusiast and ex-Physicist'
+            desc = "I Design and Code beautiful websites and love what I do."
             descLink =''
             backgroundImg = {solarPanels}
             leftBtnTxt = "ORDER NOW"
@@ -23,8 +37,10 @@ function App() {
             rightBtnTxt = "LEARN MORE"
             rightBtnLink = ""
             twoButtons = "true"
+            onClickScrollDown = {scrollDown} 
             first
           />
+          <div ref = {item1}/>
           <Item
             title = "MODEL S"
             desc = "$69,420"

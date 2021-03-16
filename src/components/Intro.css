@@ -17,18 +17,28 @@
 }
 
 .item_text{
+    width : 100vh ;
     margin-top : 20%;
     display : flex;
     flex-direction: column;
-    font-size : 34px;
+    font-size : 45px;
     color : #393c41;
     align-items: center;
     flex:1;
+    text-align: start;
+    font-weight:bolder;
+    text-align : center;
+    /* white-space : nowrap; */
+    row-gap : 20px;
+    color : black ;
+
 }
 
 .item_textDesc{
     font-weight:200;
-    font-size:14px;
+    font-size:20px;
+    font-weight: 400;
+    color : rgb(26, 25, 25);
 }
 
 .item_lowerThird{
@@ -46,4 +56,19 @@
     width : 100%;
     margin-top : 3%;
     justify-content: center;
+}
+
+.profile_photo{
+    height : 150px;
+    width : 150px;
+    border-radius : 50%;
+}
+
+.expandMoreIcon{
+    transition : all 1s ease-out;
+}
+
+.expandMoreIcon:hover{
+    transform : translate(0,10px) scale(2,1);
+    cursor : pointer;
 }
