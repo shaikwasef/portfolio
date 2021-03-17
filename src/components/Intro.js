@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import profile from "../assets/profile_photo.jpg"
 import "./Intro.css";
 
-const Intro = ({title,desc,backgroundImg,onClickScrollDown ,leftBtnTxt , leftBtnLink, rightBtnTxt , rightBtnLink , twoButtons, first}) => {
+const Intro = ({title,desc,backgroundImg,onClickScrollDown , first}) => {
     return (
         <div className = "item" style = {{
             backgroundImage: `url(${backgroundImg})`
@@ -21,7 +21,7 @@ const Intro = ({title,desc,backgroundImg,onClickScrollDown ,leftBtnTxt , leftBtn
                     {first &&
                     ( 
                         <div className = "item_expand">
-                            <ExpandMoreIcon onClick = {() => {onClickScrollDown()}} className="expandMoreIcon"/>
+                            <ExpandMoreIcon style = {{ color : "black"}}onClick = {() => {onClickScrollDown()}} className="expandMoreIcon"/>
                         </div>
                     )}
                 </div>
