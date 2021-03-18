@@ -87,11 +87,116 @@
 .technologies_container{
     display:flex;
     flex-direction : row;
-    column-gap : 20px;
+    column-gap : 40px;
+    justify-content: space-evenly;
 }
 
 .work_logo{
     border-radius :20px;
     width : 300px;
     height : 300px;
+    transition: all 1s;
+}
+
+
+.logoDiv{
+    overflow:hidden;
+    position : relative;
+    border-radius :20px;
+    width : 300px;
+    height : 300px;
+    border : 2px solid black;
+}
+
+.logoDiv:hover .work_logo{
+    transform: scale(1.5,1.5);
+    opacity : 0.5
+}
+
+.logoDiv:hover .text_over_work_logo{
+    opacity:1;
+    visibility: visible;
+}
+
+.text_over_work_logo{
+    height : 300px;
+    width : 300px;
+    color : black;
+    position : absolute;
+    top : 10px;
+    z-index : 1;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.text_over_work_logo>p{
+    font-family: "eurostile", sans-serif;
+    white-space: normal;
+    
+}
+
+.Title{
+    font-size : 50px;
+}
+
+.Desc{
+    font-size : 30px;
+    font-weight : 100;
+}
+
+.visit{
+    height : 50px;
+    width : 160px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    background : transparent;
+    border : 2px solid black;
+    transition: all 0.8s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.visit:focus{
+    outline:none;  
+}
+
+.visit:hover{
+    background-color: rgb(0, 0, 0);
+    cursor:pointer !important;
+    color : white;
+}
+
+.visitButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.GitHub_button{
+    width : 200px;
+    height : 50px;
+    border-radius : 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 5px;
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.GitHub_button:hover{
+    background-color: black;
+    color : white;
+    cursor:pointer;
+}
+
+.GitHub_button:focus{
+    outline:none;
 }

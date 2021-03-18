@@ -15,7 +15,7 @@ import SpringLogo from "../assets/spring.png"
 const PageOne = ({title,desc,onClickScrollDown , descFramework ,first}) => {
     return (
         <div className = "item" style = {{
-            backgroundColor : "#A3A3A3"
+            backgroundColor : "rgba(161, 161, 161)"
         }}>
             <div className = "item_container">
                 <div className = "item_text_intro">

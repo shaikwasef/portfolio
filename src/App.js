@@ -12,6 +12,7 @@ import IntroBackground from "./assets/intro_background.jpeg"
 import React,{useRef , useState , useEffect} from 'react'
 import PageOne from "./components/PageOne"
 import PageTwo from "./components/PageTwo"
+import LastPage from "./components/LastPage"
 
 function App() {
   const item1 = useRef(null);
@@ -59,23 +60,14 @@ function App() {
           <PageOne
             title = "Hi , I'm Wasef , nice to meet you "
             desc = "I have been learning web development for some time now and building some cool projects .I love coding in general and like learning new frameworks for building interesting web applications .I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time. Apart from my interest in coding , I have also worked extensively in the field of theoretical physics and published papers in reputed journals and conferences."
-            descFramework = "Languages and Libraries and Frameworks I use "
+            descFramework = "Languages , Libraries and Frameworks I use "
 
              />
           <PageTwo
             title = "My Recent Work"
-            descFramework = "Languages and Libraries and Frameworks I use "
              />
-          <Item
-            title = "MODEL X"
-            desc = "$89,420"
-            descLink =''
-            backgroundImg = {ModelX}
-            leftBtnTxt = "CUSTOM ORDER"
-            leftBtnLink = ""
-            rightBtnTxt = "LEARN MORE"
-            rightBtnLink = ""
-            twoButtons = "true" />
+          <LastPage
+            title = "Contact Me" />
           <Item
             title = "MODEL Y"
             desc = "$65,420"

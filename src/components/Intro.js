@@ -3,6 +3,8 @@ import Button from "./Button"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import profile from "../assets/profile_photo.jpg"
 import "./Intro.css";
+import GetAppIcon from '@material-ui/icons/GetApp'
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const Intro = ({title,desc,backgroundImg,onClickScrollDown , first}) => {
     return (
@@ -16,7 +18,8 @@ const Intro = ({title,desc,backgroundImg,onClickScrollDown , first}) => {
                     <p>{desc}</p>
                     </div>
                 <img src={profile} alt = "profile" className = "profile_photo"/>    
-                </div>
+                <button className = "resume_button"><DescriptionIcon className = "document_symbol"/><GetAppIcon className = "download_symbol"/>Resume`</button>
+            </div>
                 <div className = "item_lowerThird">
                     {first &&
                     ( 

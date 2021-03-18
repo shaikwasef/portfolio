@@ -72,3 +72,44 @@
     transform : translate(0,10px) scale(2,1);
     cursor : pointer;
 }
+
+.resume_button{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width : 100px;
+    height : 40px;
+    transition: all 0.5s;
+    font-weight : bold;
+    border : 2px solid black;
+    border-radius : 20px;
+    background: transparent;
+}
+
+.resume_button:hover{
+    cursor:pointer;
+    transform : scale(1.1,1.1);
+    background: black;
+    color:white;
+}
+.resume_button:hover .download_symbol{
+    display: inline-block;
+}
+
+.download_symbol{
+    display : none;
+}
+
+.resume_button:hover .document_symbol{
+    display: none;
+}
+
+.document_symbol{
+    display : block;
+}
+
+.resume_button:focus{
+   outline : none;
+}
