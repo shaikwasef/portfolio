@@ -47,16 +47,6 @@
     flex-direction: column;
 }
 
-.item_buttons{
-    display:flex;
-}
-
-.item_expand{
-    color : white;
-    width : 100%;
-    margin-top : 3%;
-    justify-content: center;
-}
 
 .profile_photo{
     height : 150px;
@@ -65,12 +55,11 @@
 }
 
 .expandMoreIcon{
-    transition : all 1s ease-out;
+    cursor : pointer;
 }
 
 .expandMoreIcon:hover{
-    transform : translate(0,10px) scale(2,1);
-    cursor : pointer;
+    transform : translate(0,10px) scale(1.5,1);
 }
 
 .resume_button{
@@ -94,19 +83,9 @@
     background: black;
     color:white;
 }
-.resume_button:hover .download_symbol{
-    display: inline-block;
-}
 
-.download_symbol{
-    display : none;
-}
 
-.resume_button:hover .document_symbol{
-    display: none;
-}
-
-.document_symbol{
+.resume_button .document_symbol{
     display : block;
 }
 

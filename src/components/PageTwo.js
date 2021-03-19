@@ -1,36 +1,33 @@
-import React , {useState} from 'react'
-import Button from "./Button"
+import React from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import profile from "../assets/profile_photo.jpg"
 import "./PageTwo.css"
-import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
 import netflixlogo from "../assets/netflix_logo.jpg"
-import slacklogo from "../assets/slack.jpg"
+import slacklogo from "../assets/slack.png"
 import countrieslogo from "../assets/countries.jpg"
 import LanguageIcon from '@material-ui/icons/Language'
 import GitHubIcon from '@material-ui/icons/GitHub'
-import pageTwo from "../assets/pageTwo.jpg"
 
 
 const PageTwo = ({title,onClickScrollDown ,first}) => {
-    const [showlogo , setShowLogo] = useState(true);
 
     return (
         <div  className = "item" style = {{
             backgroundColor : "rgba(199, 199, 199)"
         }}>
             <div className = "item_container">
-                <div className = "item_text_intro">
-                    <p style = {{color : "grey"}}>{title}</p>
+                <div className = "item_text_intro_page_two">
+                    <p>{title}</p>
             
             <div className = "technologies_container">
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Netflix Clone</p>
-                        <p className = "Desc">A clone developed using React and Redux libraries.</p>
-                        <div className= "visitButton"><button className= "visit">Visit App
+                        <div className= "visitButton"><a target="_blank"
+                        style = {{textDecoration : "none"}}
+                        href = "https://netflix-clone-c750b.web.app/profile?">
+                        <button className= "visit">Visit App
                         <LanguageIcon/>
-                        </button></div>
+                        </button></a></div>
                     </div>
                     <img src={netflixlogo} className = "work_logo"/>
                    </div> 
@@ -38,40 +35,38 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Slack<br/> Clone</p>
-                        <p className = "Desc">A clone developed using the React library.</p>
                         
-                        <div className= "visitButton"><button className= "visit">Visit App
+                        <div className= "visitButton"><a target="_blank"
+                        style = {{textDecoration : "none"}}
+                        href = "https://slack-clone-73c2d.web.app/">
+                            <button className= "visit">Visit App
                         <LanguageIcon/>
-                        </button></div>
+                        </button></a></div>
                     </div>
                     <img src={slacklogo} className = "work_logo"/>
                    </div> 
 
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
-                        <p className = "Title">Countries App</p>
-                        <p className = "Desc">A web app developed using the React library and countries API.</p>
+                        <p className = "Title" style = {{fontSize : "40px"}}>Countries App</p>
                         
-                        <div className= "visitButton"><button className= "visit">Visit App
+                        <div className= "visitButton"><a target = "_blank"
+                            style = {{textDecoration : "none"}}
+                            href = "https://wonderful-rosalind-5f808a.netlify.app/">
+                            <button className= "visit">Visit App
                         <LanguageIcon/>
-                        </button></div>
+                        </button></a></div>
                     </div>
                     <img src={countrieslogo} className = "work_logo"/>
                    </div> 
 
             </div>  
 
-        <button className = "GitHub_button"><GitHubIcon/>See More on Github.com</button>
+            <a  target="_blank" href = "https://github.com/shaikwasef" style = {
+                { textDecoration : "inherit"}
+            }><button className = "GitHub_button"><GitHubIcon/>See More on Github.com</button></a>
 
             </div>   
-                <div className = "item_lowerThird">
-                    {first &&
-                    ( 
-                        <div className = "item_expand">
-                            <ExpandMoreIcon style = {{ color : "black"}}onClick = {() => {onClickScrollDown()}} className="expandMoreIcon"/>
-                        </div>
-                    )}
-                </div>
             </div>
         </div>
     )

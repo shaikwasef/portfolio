@@ -29,10 +29,10 @@ const scrollTopButton = (status) => {
                 {scrollTopButton(status)}
             </div>
             <div className = "profiles">
-                <GitHubIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/>
-                <LinkedInIcon style={{ fontSize:40 }} className = "profile_logo logo_bounce"/>
-                <LibraryBooksIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/>
-                <FacebookIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/>
+                <a  target="_blank" href = "https://github.com/shaikwasef"><GitHubIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/></a>
+                <a  target="_blank" href = "https://linkedin.com/in/shaik-wasef-a87572136"><LinkedInIcon style={{ fontSize:40 }} className = "profile_logo logo_bounce"/></a>
+                <a target = "_blank" href = "https://www.goodreads.com/user/show/93450543-shaik-wasef"><LibraryBooksIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/></a>
+                <a target = "_blank" href = "https://www.facebook.com/profile.php?id=100004963878470"><FacebookIcon style={{ fontSize: 40 }} className = "profile_logo logo_bounce"/></a>
             </div>
         </div>
     )

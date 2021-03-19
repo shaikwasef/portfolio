@@ -1,7 +1,5 @@
 import React from 'react'
-import Button from "./Button"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import profile from "../assets/profile_photo.jpg"
 import "./PageOne.css"
 import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
 import javascriptLogo from "../assets/javascript.png"
@@ -12,7 +10,7 @@ import ReduxLogo from "../assets/Redux.png"
 import JavaLogo from "../assets/Java.png"
 import SpringLogo from "../assets/spring.png"
 
-const PageOne = ({title,desc,onClickScrollDown , descFramework ,first}) => {
+const PageOne = ({title,desc,descFramework}) => {
     return (
         <div className = "item" style = {{
             backgroundColor : "rgba(161, 161, 161)"
@@ -22,7 +20,7 @@ const PageOne = ({title,desc,onClickScrollDown , descFramework ,first}) => {
                     <p>{title}</p>
                 <div className = "item_textDesc_pageone">
                     <p>{desc}</p>
-                    </div>
+                </div>
                 <p className = "descFramework">{descFramework} <ComputerTwoToneIcon style = {{
                     margin: "10px" ,
                     fontSize : 40
@@ -43,14 +41,6 @@ const PageOne = ({title,desc,onClickScrollDown , descFramework ,first}) => {
                    /> 
             </div>  
             </div>   
-                <div className = "item_lowerThird">
-                    {first &&
-                    ( 
-                        <div className = "item_expand">
-                            <ExpandMoreIcon style = {{ color : "black"}}onClick = {() => {onClickScrollDown()}} className="expandMoreIcon"/>
-                        </div>
-                    )}
-                </div>
             </div>
         </div>
     )

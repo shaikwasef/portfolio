@@ -16,13 +16,13 @@
     align-items : center;
 }
 
-.item_text_intro{
+.item_text_intro_page_two{
     width : 100vh ;
     margin-top : 20%;
     display : flex;
     flex-direction: column;
     font-size : 45px;
-    color : #393c41;
+    color : #000000;
     align-items: center;
     flex:1;
     text-align: start;
@@ -30,59 +30,8 @@
     text-align : center;
     white-space : nowrap;
     row-gap : 10px;
-    color : rgb(255, 255, 255) ;
 }
 
-.descFramework{
-    color : rgb(158, 3, 88);
-    font-weight : 100;
-    font-size: 30px;
-    display : flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.item_textDesc_pageone{
-    font-weight:200;
-    font-size:20px;
-    font-weight: 400;
-    color : rgb(230, 223, 223);
-    white-space : normal;
-    text-align : justify;
-}
-
-.item_lowerThird{
-    margin-bottom: 5%;
-    display : flex;
-    flex-direction: column;
-}
-
-.item_buttons{
-    display:flex;
-}
-
-.item_expand{
-    color : white;
-    width : 100%;
-    margin-top : 3%;
-    justify-content: center;
-}
-
-.profile_photo{
-    height : 150px;
-    width : 150px;
-    border-radius : 50%;
-}
-
-.expandMoreIcon{
-    transition : all 1s ease-out;
-}
-
-.expandMoreIcon:hover{
-    transform : translate(0,10px) scale(2,1);
-    cursor : pointer;
-}
 
 .technologies_container{
     display:flex;
@@ -93,8 +42,8 @@
 
 .work_logo{
     border-radius :20px;
-    width : 300px;
-    height : 300px;
+    width : 200px;
+    height : 200px;
     transition: all 1s;
 }
 
@@ -103,9 +52,8 @@
     overflow:hidden;
     position : relative;
     border-radius :20px;
-    width : 300px;
-    height : 300px;
-    border : 2px solid black;
+    width : 200px;
+    height : 200px;
 }
 
 .logoDiv:hover .work_logo{
@@ -119,17 +67,16 @@
 }
 
 .text_over_work_logo{
-    height : 300px;
-    width : 300px;
+    height : 200px;
+    width : 200px;
     color : black;
     position : absolute;
-    top : 10px;
     z-index : 1;
     visibility: hidden;
     display: flex;
     flex-direction: column;
     align-content: center;
-
+    justify-content: space-between;
 }
 
 .text_over_work_logo>p{
@@ -148,6 +95,8 @@
 }
 
 .visit{
+    position:relative;
+    top : -5px;
     height : 50px;
     width : 160px;
     border-radius: 10px;
@@ -160,6 +109,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 }
 
 .visit:focus{
@@ -167,7 +117,7 @@
 }
 
 .visit:hover{
-    background-color: rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
     cursor:pointer !important;
     color : white;
 }
@@ -189,6 +139,7 @@
     background: transparent;
     border: 2px solid black;
     font-weight: bold;
+    transition : all 0.5s ease-in;
 }
 
 .GitHub_button:hover{
