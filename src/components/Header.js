@@ -9,7 +9,6 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 function Header({onClickScrollTop , status}){
     
 const scrollTopButton = (status) => {
-        console.log(status);
         if(status){
             return (<div> </div>);
         }
