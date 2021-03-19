@@ -51,7 +51,7 @@ function App() {
           <div ref = {item1}/>
           <PageOne
             title = "Hi , I'm Wasef , nice to meet you "
-            desc = "I have been learning web development for some time now and building some cool projects .I love coding in general and like learning new frameworks for building interesting web applications .I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time. Apart from my interest in coding , I have also worked extensively in the field of theoretical physics and published papers in reputed journals and conferences."
+            desc = "I have been learning web development for some time now and building some cool projects .I love coding in general and like learning new technologies for building interesting web applications .I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time. Apart from my interest in coding ,I have also worked extensively in the field of theoretical physics and published papers in reputed journals and conferences."
             descFramework = "Languages , Libraries and Frameworks I use "
              />
           <PageTwo
