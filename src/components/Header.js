@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from 'react'
+import React  from 'react'
 import "./Header.css"
 import FaceIcon from '@material-ui/icons/Face';
 import GitHubIcon from '@material-ui/icons/GitHub';

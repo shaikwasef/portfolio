@@ -72,12 +72,13 @@
     color : white;
     font-size : 20px;
     font-weight: 200;
+    transition: all 0.5s ease-in;
 }
 
 
 .submit_response:hover{
     background-color: rgb(185, 1, 155);
-    color : white;
+    color : black;
     cursor:pointer;
 }
 
