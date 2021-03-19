@@ -1,5 +1,4 @@
 import React from 'react'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./PageOne.css"
 import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
 import javascriptLogo from "../assets/javascript.png"
@@ -28,13 +27,13 @@ const PageOne = ({title,desc,descFramework}) => {
                 </p>
             
             <div className = "technologies_container">
-                   <img src={javascriptLogo} className = "technologiesLogo"/> 
-                   <img src={HTMLLogo} className = "technologiesLogo"/> 
-                   <img src={CSSLogo} className = "technologiesLogo"/> 
-                   <img src={ReactLogo} className = "technologiesLogo"/> 
-                   <img src={ReduxLogo} className = "technologiesLogo"/> 
-                   <img src={JavaLogo} className = "technologiesLogo"/> 
-                   <img src={SpringLogo} className = "technologiesLogo" 
+                   <img alt = "logo" src={javascriptLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={HTMLLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={CSSLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={ReactLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={ReduxLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={JavaLogo} className = "technologiesLogo"/> 
+                   <img alt = "logo"  src={SpringLogo} className = "technologiesLogo" 
                    style = {{
                        marginLeft: "-30px"
                    }}
