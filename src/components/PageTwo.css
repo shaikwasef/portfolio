@@ -51,9 +51,10 @@
 .logoDiv{
     overflow:hidden;
     position : relative;
-    border-radius :20px;
+    border-radius :25px;
     width : 200px;
     height : 200px;
+    border : 2px solid rgb(255, 0, 234);
 }
 
 .logoDiv:hover .work_logo{
@@ -86,7 +87,8 @@
 }
 
 .Title{
-    font-size : 50px;
+    font-size : 30px;
+
 }
 
 .Desc{
@@ -99,7 +101,7 @@
     top : -5px;
     height : 50px;
     width : 160px;
-    border-radius: 10px;
+    border-radius: 20px;
     font-weight: bolder;
     font-size: 15px;
     background : transparent;
@@ -109,7 +111,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .visit:focus{

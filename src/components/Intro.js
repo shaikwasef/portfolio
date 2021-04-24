@@ -1,11 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import profile from "../assets/profile_photo.jpg"
 import "./Intro.css";
+import {Document} from "react-pdf"
 import DescriptionIcon from '@material-ui/icons/Description';
 
 const Intro = ({title,desc,backgroundImg,onClickScrollDown,first}) => {
+
+    
+
     return (
+        
         <div className = "item" style = {{
             backgroundImage: `url(${backgroundImg})`
         }}>
@@ -16,7 +21,9 @@ const Intro = ({title,desc,backgroundImg,onClickScrollDown,first}) => {
                     <p>{desc}</p>
                     </div>
                 <img src={profile} alt = "profile" className = "profile_photo"/> 
-                   
+
+
+
                 <a target="_blank" rel="noreferrer" style = {{textDecoration : "inherit"}}
                 href = "https://drive.google.com/file/d/16NeFdJcIjlEWokzfFEkq9fo7Z4oaAB55/view?usp=sharing"><button className = "resume_button"><DescriptionIcon className = "document_symbol"/>Resume</button></a>
             </div>
