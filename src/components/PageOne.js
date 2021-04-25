@@ -17,13 +17,12 @@ const PageOne = ({title,desc,descFramework}) => {
                 <div className = "item_text_intro">
                     <p>{title}</p>
                 <div className = "item_textDesc_pageone">
-                    <p>{desc}</p>
+                    <div>{desc}</div>
                 </div>
-                <p className = "descFramework">{descFramework} <ComputerTwoToneIcon style = {{
-                    margin: "10px" ,
-                    fontSize : 40
+                <div className = "descFramework">{descFramework} <ComputerTwoToneIcon style = {{
+                    margin: "10px"
                 }}/>
-                </p>
+                </div>
             
             <div className = "technologies_container">
                    <img alt = "logo" src={javascriptLogo} className = "technologiesLogo"/> 

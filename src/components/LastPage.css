@@ -85,3 +85,16 @@
 .submit_response:focus{
     outline:none;
 }
+
+@media (max-width: 767px){
+    .item_text_intro_last_page {
+        font-size: 28px;
+        margin-top: 10vh;
+    }
+    .item_textDesc_last_page{
+        font-size: 20px;
+    }
+    .input_field{
+        width :320px;
+    }
+}
