@@ -17,7 +17,7 @@
 }
 
 .item_text_intro_page_two{
-    width : 100vh ;
+    width : 100vw ;
     margin-top : 20%;
     display : flex;
     flex-direction: column;
@@ -152,4 +152,21 @@
 
 .GitHub_button:focus{
     outline:none;
+}
+
+
+@media (max-width: 767px){
+    .item_text_intro_page_two{
+        width : 100vw ;
+        margin-top : 10vh;
+    }
+
+    .technologies_container {
+        flex-direction: column;
+        height: 57vh;
+    }
+    .technologiesLogo{
+        height:70px;
+        width: 70px;
+    }
 }

@@ -1,8 +1,7 @@
-import React,{useState} from 'react'
+import React from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import profile from "../assets/profile_photo.jpg"
 import "./Intro.css";
-import {Document} from "react-pdf"
 import DescriptionIcon from '@material-ui/icons/Description';
 
 const Intro = ({title,desc,backgroundImg,onClickScrollDown,first}) => {
