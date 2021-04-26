@@ -24,7 +24,7 @@ const Intro = ({title,desc,backgroundImg,onClickScrollDown,first}) => {
 
 
                 <a target="_blank" rel="noreferrer" style = {{textDecoration : "inherit"}}
-                href = "https://drive.google.com/file/d/16NeFdJcIjlEWokzfFEkq9fo7Z4oaAB55/view?usp=sharing"><button className = "resume_button"><DescriptionIcon className = "document_symbol"/>Resume</button></a>
+                href = "https://drive.google.com/file/d/1yWkk7bCIbrhQGNrmgXEHZmrcSz8TLoLL/view?usp=sharing"><button className = "resume_button"><DescriptionIcon className = "document_symbol"/>Resume</button></a>
             </div>
                 <div className = "item_lowerThird">
                     {first &&
