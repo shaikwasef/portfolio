@@ -3,7 +3,7 @@ import "./PageTwo.css"
 import netflixlogo from "../assets/netflix_logo.jpg"
 import slacklogo from "../assets/slack.png"
 import countrieslogo from "../assets/countries.jpg"
-
+import graduation from "../assets/graduation.png"
 import GitHubIcon from '@material-ui/icons/GitHub'
 
 
@@ -25,7 +25,6 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                         style = {{textDecoration : "none"}}
                         href = "https://netflix-clone-c750b.web.app/profile?">
                         <button className= "visit">Visit App
-                        
                         </button></a></div>
                     </div>
                     <img  alt = "app" src={netflixlogo} className = "work_logo"/>
@@ -34,12 +33,10 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Slack Clone</p>
-                        
                         <div className= "visitButton"><a rel="noreferrer" target="_blank"
                         style = {{textDecoration : "none"}}
                         href = "https://boring-allen-dbc0cc.netlify.app/">
                             <button className= "visit">Visit App
-                      
                         </button></a></div>
                     </div>
                     <img  alt = "app" src={slacklogo} className = "work_logo"/>
@@ -48,15 +45,25 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title" >Countries App</p>
-                        
                         <div className= "visitButton"><a rel="noreferrer" target = "_blank"
                             style = {{textDecoration : "none"}}
                             href = "https://wonderful-rosalind-5f808a.netlify.app/">
                             <button className= "visit">Visit App
-                       
                         </button></a></div>
                     </div>
                     <img alt = "app" src={countrieslogo} className = "work_logo"/>
+                   </div> 
+
+                   <div className = "logoDiv"> 
+                    <div className = "text_over_work_logo">
+                        <p className = "Title" >Course Registration</p>
+                        <div className= "visitButton"><a rel="noreferrer" target = "_blank"
+                            style = {{textDecoration : "none"}}
+                            href = "https://sharp-ardinghelli-26d02e.netlify.app">
+                            <button className= "visit">Visit App
+                        </button></a></div>
+                    </div>
+                    <img alt = "app" src={graduation} className = "work_logo"/>
                    </div> 
 
             </div>  

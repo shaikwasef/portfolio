@@ -38,6 +38,7 @@
     flex-direction : row;
     column-gap : 40px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .work_logo{
@@ -83,12 +84,10 @@
 .text_over_work_logo>p{
     font-family: "eurostile", sans-serif;
     white-space: normal;
-    
 }
 
 .Title{
     font-size : 30px;
-
 }
 
 .Desc{
@@ -103,7 +102,6 @@
     width : 160px;
     border-radius: 20px;
     font-weight: bolder;
-    font-size: 15px;
     background : transparent;
     border : 2px solid black;
     transition: all 0.8s;
@@ -155,18 +153,60 @@
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 420px){
     .item_text_intro_page_two{
         width : 100vw ;
         margin-top : 10vh;
     }
 
-    .technologies_container {
-        flex-direction: column;
-        height: 57vh;
-    }
     .technologiesLogo{
         height:70px;
         width: 70px;
     }
+
+    .work_logo{
+        border-radius :25px;
+        width : 120px;
+        height : 120px;
+        transition: all 1s;
+    }
+
+    
+    .logoDiv{
+        overflow:hidden;
+        position : relative;
+        border-radius :25px;
+        width : 120px;
+        height : 120px;
+        border : 2px solid rgb(255, 0, 234);
+    }
+
+    .text_over_work_logo{
+        height : 120px;
+        width : 120px;
+        position: relative;
+        top : 5px;
+        color : black;
+        position : absolute;
+        z-index : 1;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+
+    .Title{
+        font-size : 20px;
+        text-align: center;
+    }
+
+    .visit{
+        position:relative;
+        top : -5px;
+        height : 30px;
+        width : 80px;
+    }
+    
 }

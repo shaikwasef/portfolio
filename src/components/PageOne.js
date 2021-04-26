@@ -7,6 +7,7 @@ import CSSLogo from "../assets/css.png"
 import ReactLogo from "../assets/React.png"
 import ReduxLogo from "../assets/Redux.png"
 import SpringLogo from "../assets/spring_boot.png"
+import Webpack from "../assets/webpack.png"
 
 const PageOne = ({title,desc,descFramework}) => {
     return (
@@ -30,7 +31,9 @@ const PageOne = ({title,desc,descFramework}) => {
                    <img alt = "logo"  src={CSSLogo} className = "technologiesLogo"/> 
                    <img alt = "logo"  src={ReactLogo} className = "technologiesLogo"/> 
                    <img alt = "logo"  src={ReduxLogo} className = "technologiesLogo"/>  
+                   <img alt = "logo"  src={Webpack} className = "technologiesLogo"/>
                    <img alt = "logo"  src={SpringLogo} className = "technologiesLogo" /> 
+                   
             </div>  
             </div>   
             </div>
