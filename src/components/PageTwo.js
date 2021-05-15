@@ -5,6 +5,7 @@ import slacklogo from "../assets/slack.png"
 import countrieslogo from "../assets/countries.jpg"
 import graduation from "../assets/graduation.png"
 import GitHubIcon from '@material-ui/icons/GitHub'
+import gitAppLogo from "../assets/gitAppLogo.png"
 
 
 const PageTwo = ({title,onClickScrollDown ,first}) => {
@@ -54,6 +55,19 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     <img alt = "app" src={countrieslogo} className = "work_logo"/>
                    </div> 
 
+                    
+                   <div className = "logoDiv"> 
+                    <div className = "text_over_work_logo">
+                        <p className = "Title" >The GitHub App</p>
+                        <div className= "visitButton"><a rel="noreferrer" target = "_blank"
+                            style = {{textDecoration : "none"}}
+                            href = "https://suspicious-jang-07a34c.netlify.app">
+                            <button className= "visit">Visit App
+                        </button></a></div>
+                    </div>
+                    <img alt = "app" src={gitAppLogo} className = "work_logo"/>
+                   </div> 
+
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title" >Course Registration</p>
@@ -65,6 +79,7 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img alt = "app" src={graduation} className = "work_logo"/>
                    </div> 
+
 
             </div>  
 

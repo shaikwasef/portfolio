@@ -43,8 +43,8 @@
 
 .work_logo{
     border-radius :20px;
-    width : 200px;
-    height : 200px;
+    width : 160px;
+    height : 160px;
     transition: all 1s;
 }
 
@@ -53,8 +53,8 @@
     overflow:hidden;
     position : relative;
     border-radius :25px;
-    width : 200px;
-    height : 200px;
+    width : 160px;
+    height : 160px;
     border : 2px solid rgb(255, 0, 234);
 }
 
@@ -69,8 +69,8 @@
 }
 
 .text_over_work_logo{
-    height : 200px;
-    width : 200px;
+    height : 160px;
+    width : 160px;
     color : black;
     position : absolute;
     z-index : 1;
@@ -87,7 +87,8 @@
 }
 
 .Title{
-    font-size : 30px;
+    margin-top:10px;
+    font-size : 22px;
 }
 
 .Desc{
@@ -99,7 +100,7 @@
     position:relative;
     top : -5px;
     height : 50px;
-    width : 160px;
+    width : 120px;
     border-radius: 20px;
     font-weight: bolder;
     background : transparent;
