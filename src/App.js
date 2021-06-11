@@ -2,7 +2,7 @@ import './App.css';
 import Header from "./components/Header"
 import Intro from "./components/Intro.js"
 import IntroBackground from "./assets/intro_background.jpeg"
-import React,{useRef , useState,useEffect} from 'react'
+import React,{useRef , useState} from 'react'
 import PageOne from "./components/PageOne"
 import PageTwo from "./components/PageTwo"
 import LastPage from "./components/LastPage"
