@@ -13,10 +13,6 @@ function App() {
   const capp = useRef(null);
 
   const [scrollTopButton , stateScrollTopButton] = useState(true);
-  
-  useEffect(() => {
-    document.title = "Shaik Wasef"
-    }, []);
 
   const transitionNavBar = () => {
     if(capp.current.scrollTop >= 320){

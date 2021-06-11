@@ -2,10 +2,11 @@ import React from 'react'
 import "./PageTwo.css"
 import netflixlogo from "../assets/netflix_logo.jpg"
 import slacklogo from "../assets/slack.png"
-import countrieslogo from "../assets/countries.jpg"
+import ethereum from "../assets/ethereum-logo.jpeg"
 import graduation from "../assets/graduation.png"
 import GitHubIcon from '@material-ui/icons/GitHub'
 import gitAppLogo from "../assets/gitAppLogo.png"
+import paymentPage from "../assets/paymentPage.jpeg"
 
 
 const PageTwo = ({title,onClickScrollDown ,first}) => {
@@ -45,14 +46,26 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
 
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
-                        <p className = "Title" >Countries App</p>
-                        <div className= "visitButton"><a rel="noreferrer" target = "_blank"
-                            style = {{textDecoration : "none"}}
-                            href = "https://wonderful-rosalind-5f808a.netlify.app/">
+                        <p className = "Title">Payment's page</p>
+                        <div className= "visitButton"><a rel="noreferrer" target="_blank"
+                        style = {{textDecoration : "none"}}
+                        href = "https://happay-payment.netlify.app/">
                             <button className= "visit">Visit App
                         </button></a></div>
                     </div>
-                    <img alt = "app" src={countrieslogo} className = "work_logo"/>
+                    <img  alt = "app" src={paymentPage} className = "work_logo"/>
+                   </div> 
+
+                   <div className = "logoDiv"> 
+                    <div className = "text_over_work_logo">
+                        <p className = "Title" >BlockChain Todolist</p>
+                        <div className= "visitButton"><a rel="noreferrer" target = "_blank"
+                            style = {{textDecoration : "none"}}
+                            href = "https://todolist-ethereum.netlify.app/">
+                            <button className= "visit">Visit App
+                        </button></a></div>
+                    </div>
+                    <img alt = "app" src={ethereum} className = "work_logo"/>
                    </div> 
 
                     
