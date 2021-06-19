@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react'
+import React  from 'react'
 import "./PageOne.css"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Zoom from 'react-reveal/Zoom';

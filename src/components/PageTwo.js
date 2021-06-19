@@ -21,7 +21,6 @@ const PageTwo = ({title,onClickScrollDown ,first,refToScroll}) => {
             <div className = "item_container">
                 <div className = "item_text_intro_page_two">
                     <Zoom><p>{title}</p></Zoom>
-            
            
             <div className = "technologies_container">
                     <Flip left>
@@ -115,7 +114,7 @@ const PageTwo = ({title,onClickScrollDown ,first,refToScroll}) => {
 
             </div>  
             <div>
-                            <ExpandMoreIcon style = {{ color : "black" , fontSize :'80'}} onClick = {(reftoScroll) => onClickScrollDown(refToScroll)} className="expandMoreIcon"/>
+                   <ExpandMoreIcon style = {{ color : "black" , fontSize :'80'}} onClick = {(reftoScroll) => onClickScrollDown(refToScroll)} className="expandMoreIcon"/>
             </div> 
             </div>
         </div>
