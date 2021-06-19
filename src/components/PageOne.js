@@ -1,5 +1,8 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import "./PageOne.css"
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 import ComputerTwoToneIcon from '@material-ui/icons/ComputerTwoTone';
 import javascriptLogo from "../assets/javascript.png"
 import HTMLLogo from "../assets/html.png"
@@ -10,33 +13,40 @@ import SpringLogo from "../assets/spring_boot.png"
 import TypeScriptLogo from "../assets/typescript-logo.svg"
 import NextJSLogo from "../assets/next-js.png"
 
-const PageOne = ({title,desc,descFramework}) => {
+const PageOne = ({title,desc,descFramework,refToScroll,onClickScrollDown}) => {
+
     return (
         <div className = "item" style = {{
             backgroundColor : "rgba(161, 161, 161)"
         }}>
             <div className = "item_container">
                 <div className = "item_text_intro">
-                    <p>{title}</p>
+                    <Zoom><p>{title}</p></Zoom>
                 <div className = "item_textDesc_pageone">
-                    <div>{desc}</div>
+                    <Zoom><div>{desc}</div></Zoom>
                 </div>
-                <div className = "descFramework">{descFramework} <ComputerTwoToneIcon style = {{
+                <Zoom>
+                <div className = "descFramework">
+                    {descFramework} <ComputerTwoToneIcon style = {{
                     margin: "10px"
                 }}/>
                 </div>
+                </Zoom>
             
             <div className = "technologies_container">
-                   <img alt = "logo" src={javascriptLogo} className = "technologiesLogo"/> 
-                   <img alt = "logo" src = {TypeScriptLogo} className = "technologiesLogo"/> 
-                   <img alt = "logo"  src={HTMLLogo} className = "technologiesLogo"/> 
-                   <img alt = "logo"  src={CSSLogo} className = "technologiesLogo"/> 
-                   <img alt = "logo"  src={ReactLogo} className = "technologiesLogo"/> 
-                   <img alt = "logo"  src={NextJSLogo} className = "technologiesLogo"/>
-                   <img alt = "logo"  src={ReduxLogo} className = "technologiesLogo"/>  
-                   <img alt = "logo"  src={SpringLogo} className = "technologiesLogo" /> 
+            <Flip delay={500} left><img alt = "logo" src={javascriptLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo" src = {TypeScriptLogo} className = "technologiesLogo"/></Flip>        
+            <Flip delay={500} left><img alt = "logo"  src={HTMLLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo"  src={CSSLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo"  src={ReactLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo"  src={NextJSLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo"  src={ReduxLogo} className = "technologiesLogo"/></Flip>
+            <Flip delay={500} left><img alt = "logo"  src={SpringLogo} className = "technologiesLogo"/></Flip>
             </div>  
-            </div>   
+            </div>
+            <div>
+                            <ExpandMoreIcon style = {{ color : "black" , fontSize :'80'}} onClick = {(reftoScroll) => onClickScrollDown(refToScroll)} className="expandMoreIcon"/>
+            </div>
             </div>
         </div>
     )

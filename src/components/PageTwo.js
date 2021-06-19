@@ -1,6 +1,9 @@
 import React from 'react'
 import "./PageTwo.css"
 import netflixlogo from "../assets/netflix_logo.jpg"
+import Flip from 'react-reveal/Flip';
+import Zoom from 'react-reveal/Zoom';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import slacklogo from "../assets/slack.png"
 import ethereum from "../assets/ethereum-logo.jpeg"
 import graduation from "../assets/graduation.png"
@@ -9,7 +12,7 @@ import gitAppLogo from "../assets/gitAppLogo.png"
 import paymentPage from "../assets/paymentPage.jpeg"
 
 
-const PageTwo = ({title,onClickScrollDown ,first}) => {
+const PageTwo = ({title,onClickScrollDown ,first,refToScroll}) => {
 
     return (
         <div  className = "item" style = {{
@@ -17,9 +20,11 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
         }}>
             <div className = "item_container">
                 <div className = "item_text_intro_page_two">
-                    <p>{title}</p>
+                    <Zoom><p>{title}</p></Zoom>
             
+           
             <div className = "technologies_container">
+                    <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Netflix Clone</p>
@@ -30,8 +35,10 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                         </button></a></div>
                     </div>
                     <img  alt = "app" src={netflixlogo} className = "work_logo"/>
-                   </div> 
-
+                   </div>
+                   </Flip>  
+                        
+                   <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Slack Clone</p>
@@ -43,7 +50,9 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img  alt = "app" src={slacklogo} className = "work_logo"/>
                    </div> 
+                   </Flip>  
 
+                   <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title">Payment's page</p>
@@ -55,7 +64,9 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img  alt = "app" src={paymentPage} className = "work_logo"/>
                    </div> 
+                   </Flip>
 
+                   <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title" >BlockChain Todolist</p>
@@ -67,8 +78,9 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img alt = "app" src={ethereum} className = "work_logo"/>
                    </div> 
+                   </Flip>
 
-                    
+                   <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title" >The GitHub App</p>
@@ -80,7 +92,9 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img alt = "app" src={gitAppLogo} className = "work_logo"/>
                    </div> 
+                   </Flip>
 
+                   <Flip left>
                    <div className = "logoDiv"> 
                     <div className = "text_over_work_logo">
                         <p className = "Title" >Course Registration</p>
@@ -92,15 +106,17 @@ const PageTwo = ({title,onClickScrollDown ,first}) => {
                     </div>
                     <img alt = "app" src={graduation} className = "work_logo"/>
                    </div> 
-
-
+                   </Flip>
             </div>  
 
             <a rel="noreferrer" target="_blank" href = "https://github.com/shaikwasef" style = {
                 { textDecoration : "inherit"}
             }><button className = "GitHub_button"><GitHubIcon/>See More on Github.com</button></a>
 
-            </div>   
+            </div>  
+            <div>
+                            <ExpandMoreIcon style = {{ color : "black" , fontSize :'80'}} onClick = {(reftoScroll) => onClickScrollDown(refToScroll)} className="expandMoreIcon"/>
+            </div> 
             </div>
         </div>
     )
