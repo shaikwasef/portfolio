@@ -38,7 +38,7 @@ function App() {
         <div className="app_itemsContainer"  ref = {capp}  onScroll = {transitionNavBar}>
           <div ref = {intro}/>
           <Intro
-            title = 'Front-end Developer , Coding Enthusiast , writer and ex-Physicist'
+            title = 'Front-end Developer , Coding Enthusiast and Writer'
             desc = "I design and code beautiful websites and love what I do."
             descLink =''
             backgroundImg = {IntroBackground}
@@ -54,7 +54,7 @@ function App() {
           <div ref = {intro_buttom}/>
           <PageOne
             title = "Hi , I'm Wasef , nice to meet you "
-            desc = "I have been learning web development for some time now and building some cool projects .I love coding in general and like learning new technologies for building interesting web applications .I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time. Apart from my interest in coding ,I have also worked extensively in the field of theoretical physics and published papers in reputed journals and conferences.I currently work as a front end developer for Regology Inc. and also work on free lancing projects in my free time. Check out my projects below."
+            desc = "I'm currently working as a front end engineer at Regology Inc .I love coding in general and like learning new technologies for building interesting web applications .I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time. Apart from my interest in coding ,I have also worked extensively in the field of theoretical physics and published papers in reputed journals and conferences.I currently work as a front end developer for Regology Inc. and also work on free lancing projects in my free time. Check out my projects below."
             descFramework = "Languages , Libraries and Frameworks I use "
             onClickScrollDown = {(item) => scrollDown(item)} 
             refToScroll = {page1_buttom}
