@@ -20,7 +20,7 @@ const Intro = ({title,desc,backgroundImg,onClickScrollDown,first,refToScroll}) =
                 <img src={profile} alt = "profile" className = "profile_photo"/>
                 <Fade bottom>
                 <a target="_blank" rel="noreferrer" style = {{textDecoration : "inherit"}}
-                href = "https://drive.google.com/file/d/1yWkk7bCIbrhQGNrmgXEHZmrcSz8TLoLL/view?usp=sharing"><button className = "resume_button"><DescriptionIcon className = "document_symbol"/>Resume</button></a>
+                href = "https://docs.google.com/document/d/13xFGQ6o7sGYJiVXT6fD9fANE7CpG_xMDIrftkdufuGA/edit?usp=sharing"><button className = "resume_button"><DescriptionIcon className = "document_symbol"/>Resume</button></a>
                 </Fade>
             </div>
                 <div className = "item_lowerThird">
